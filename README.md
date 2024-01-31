@@ -40,3 +40,19 @@ Green : 10
 Orange: 23
 
 Yellow: 12
+
+### how to read the output (sample above)
+
+Random pattern as answer:
+
+ | O | O | O |
+ |---|---|---|
+ | G | Y | Y |
+ | G | Y | G |
+
+Color pattern filled as:
+
+ | 1 | 2 | 3 |
+ |---|---|---|
+ | 4 | 5 | 6 |
+ | 7 | 8 | 9 |
