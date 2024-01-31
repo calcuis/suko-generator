@@ -5,7 +5,7 @@ Suko (a modified Sudoku game) is a popular logic-based number-placement puzzle w
 Base position:
 
  | 1 | 2 | 3 |
- |---|---|---|
+ |:-:|:-:|:-:|
  | 4 | 5 | 6 |
  | 7 | 8 | 9 |
 
@@ -46,13 +46,13 @@ Yellow: 12
 Random pattern as answer:
 
  | 6 | 9 | 8 |
- |---|---|---|
+ |:-:|:-:|:-:|
  | 4 | 7 | 3 |
  | 5 | 2 | 1 |
 
 Color pattern filled as:
 
  | O | O | O |
- |---|---|---|
+ |:-:|:-:|:-:|
  | G | Y | Y |
  | G | Y | G |
