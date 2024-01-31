@@ -1,28 +1,43 @@
-import random
+# !/usr/bin/env python3
 
-def generate_random_pattern():
-    digits = list(range(1, 10))
-    random.shuffle(digits)
-    pattern = ''.join(map(str, digits))
-    return pattern
+__version__="0.2"
 
-def calculate_sums(pattern):
-    sums = []
-    for indices in [(0, 1, 3, 4), (1, 2, 4, 5), (3, 4, 6, 7), (4, 5, 7, 8)]:
-        sums.append(sum(int(pattern[i]) for i in indices))
-    return sums
+def __init__():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-v', '--version', action='version', version='%(prog)s ' + __version__)
+    parser.add_argument('g', help='generate a suko pattern')
+    args = parser.parse_args()
+    if args.g=="g":
+        import random
 
-def calculate_hints(pattern):
-    hints = []
-    for indices in [(0, 1, 3), (2, 4, 5, 8), (6, 7)]: #model
-        hints.append(sum(int(pattern[i]) for i in indices))
-    return hints
+        def generate_random_pattern():
+            pattern = list(range(1, 10))
+            random.shuffle(pattern)
+            return pattern
 
-random_pattern = generate_random_pattern()
-print("Random Pattern:", random_pattern)
+        def calculate_sums(pattern):
+            sums = []
+            #Sums for four corners
+            for indices in [(0, 1, 3, 4), (1, 2, 4, 5), (3, 4, 6, 7), (4, 5, 7, 8)]:
+                sums.append(sum(int(pattern[i]) for i in indices))
+            return sums
 
-sums = calculate_sums(random_pattern)
-print("Sums:", sums)
+        pattern1 = generate_random_pattern()
+        print("Random Pattern (answer):", pattern1)
 
-hints = calculate_hints(random_pattern)
-print("Hints:", hints)
+        sums = calculate_sums(pattern1)
+        print("Sums:", sums)
+
+        pattern2 = generate_random_pattern()
+        print("Color Pattern (sorting):", pattern2)
+        sorting_number = ''.join(map(str, pattern2))
+
+        #Sum of the first three digits of the Sorting Number using 1st Pattern
+        print(f"Green :",sum(pattern1[int(digit)-1] for digit in sorting_number[:3]))
+        # Sum of the second three digits of the Sorting Number using 1st Pattern
+        print(f"Orange:",sum(pattern1[int(digit)-1] for digit in sorting_number[3:6]))
+        # Sum of the third three digits of the Sorting Number using 1st Pattern
+        print(f"Yellow:",sum(pattern1[int(digit)-1] for digit in sorting_number[6:9]))
+
+    # print("in __init__ function")
