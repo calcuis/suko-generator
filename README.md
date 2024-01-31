@@ -4,11 +4,11 @@ Suko (a modified Sudoku game) is a popular logic-based number-placement puzzle w
 
 Position:
 
- 1, 2, 3
-
- 4, 5, 6
-
- 7, 8, 9
+ | 1 | 2 | 3 |
+ |---|---|---|
+ | 4 | 5 | 6 |
+ |---|---|---|
+ | 7 | 8 | 9 |
 
 Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
