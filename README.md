@@ -2,6 +2,16 @@
 
 Suko (a modified Sudoku game) is a popular logic-based number-placement puzzle where the objective is to fill a 3x3 grid with digits that compose the grid (often called regions or boxes) contain all of the digits from 1 to 9 without repetition.
 
+Position:
+
+ 1, 2, 3
+ 4, 5, 6
+ 7, 8, 9
+
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Color: [G, G, G, O, O, O, Y, Y, Y]
+
 This generator is able to generate a random pattern (digits) with sums and color hints.
 
 ### install via pip:
