@@ -9,9 +9,7 @@ Base position:
  | 4 | 5 | 6 |
  | 7 | 8 | 9 |
 
-Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-Color: [G, G, G, O, O, O, Y, Y, Y]
+Present as array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 This generator is able to generate a random pattern (digits) with sums and color hints.
 
@@ -29,30 +27,33 @@ suko g
 ```
 
 #### output example
-Random Pattern (answer): [6, 9, 8, 4, 7, 3, 5, 2, 1]
 
-Sums: [26, 27, 18, 13]
+Random Pattern (Answer): [8, 2, 3, 6, 7, 9, 5, 1, 4]
 
-Color Pattern (sorting): [9, 7, 4, 3, 1, 2, 8, 6, 5]
+Sums: [23, 21, 19, 21]
 
-Green : 10
+Color Range (Green, Orange, Yellow): (2, 4, 3)
 
-Orange: 23
+Color Pattern: [2, 7, 5, 9, 1, 3, 4, 8, 6]
 
-Yellow: 12
+Green : 7
+
+Orange: 22
+
+Yellow: 16
 
 #### how to read the output above
 
 Random pattern as answer:
 
- | 6 | 9 | 8 |
+ | 8 | 2 | 3 |
  |:-:|:-:|:-:|
- | 4 | 7 | 3 |
- | 5 | 2 | 1 |
+ | 6 | 7 | 9 |
+ | 5 | 1 | 4 |
 
 Color pattern filled as:
 
- | O | O | O |
+ | O | G | O |
  |:-:|:-:|:-:|
- | G | Y | Y |
- | G | Y | G |
+ | Y | O | Y |
+ | G | Y | O |
