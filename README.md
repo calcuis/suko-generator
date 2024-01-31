@@ -28,7 +28,7 @@ suko -h
 suko g
 ```
 
-#### output sample
+#### output example
 Random Pattern (answer): [6, 9, 8, 4, 7, 3, 5, 2, 1]
 
 Sums: [26, 27, 18, 13]
