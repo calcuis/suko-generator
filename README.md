@@ -16,3 +16,16 @@ suko -h
 ```
 suko g
 ```
+
+#### output sample
+Random Pattern (answer): [6, 9, 8, 4, 7, 3, 5, 2, 1]
+
+Sums: [26, 27, 18, 13]
+
+Color Pattern (sorting): [9, 7, 4, 3, 1, 2, 8, 6, 5]
+
+Green : 10
+
+Orange: 23
+
+Yellow: 12
