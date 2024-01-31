@@ -41,7 +41,7 @@ Orange: 23
 
 Yellow: 12
 
-### how to read the output (sample above)
+#### how to read the output above
 
 Random pattern as answer:
 
