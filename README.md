@@ -45,10 +45,10 @@ Yellow: 12
 
 Random pattern as answer:
 
- | 1 | 2 | 3 |
+ | 6 | 9 | 8 |
  |---|---|---|
- | 4 | 5 | 6 |
- | 7 | 8 | 9 |
+ | 4 | 7 | 3 |
+ | 5 | 2 | 1 |
 
 Color pattern filled as:
 
