@@ -27,11 +27,11 @@ def __init__():
             return sums
 
         def generate_colors():
-            num1 = random.randint(2, 5)
-            num2 = random.randint(2, 5)
-            num3 = 9 - num1 - num2
-            if 2 <= num3 <= 5:
-                return num1, num2, num3
+            color1 = random.randint(2, 5)
+            color2 = random.randint(2, 5)
+            color3 = 9 - color1 - color2
+            if 2 <= color3 <= 5:
+                return color1, color2, color3
             else:
                 return generate_colors()
             
@@ -41,17 +41,17 @@ def __init__():
         sums = calculate_sums(pattern1)
         print("Sums:", sums)
 
-        # Generate and print the result as color range
-        result = generate_colors()
-        print("Color Range (Green, Orange, Yellow):", result)
+        # Generate and print it as color range
+        colors = generate_colors()
+        print("Color Range (Green, Orange, Yellow):", colors)
 
         pattern2 = generate_random_pattern()
         print("Color Pattern:", pattern2)
         sorting_number = ''.join(map(str, pattern2))
 
         #Sum of Green Pattern
-        print(f"Green :",sum(pattern1[int(digit)-1] for digit in sorting_number[:result[0]]))
+        print(f"Green :",sum(pattern1[int(digit)-1] for digit in sorting_number[:colors[0]]))
         # Sum of Orange Pattern
-        print(f"Orange:",sum(pattern1[int(digit)-1] for digit in sorting_number[result[0]:result[0]+result[1]]))
+        print(f"Orange:",sum(pattern1[int(digit)-1] for digit in sorting_number[colors[0]:colors[0]+colors[1]]))
         # Sum of Yellow Pattern
-        print(f"Yellow:",sum(pattern1[int(digit)-1] for digit in sorting_number[result[0]+result[1]:9]))
+        print(f"Yellow:",sum(pattern1[int(digit)-1] for digit in sorting_number[colors[0]+colors[1]:9]))
