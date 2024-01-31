@@ -45,14 +45,14 @@ Yellow: 12
 
 Random pattern as answer:
 
- | O | O | O |
- |---|---|---|
- | G | Y | Y |
- | G | Y | G |
-
-Color pattern filled as:
-
  | 1 | 2 | 3 |
  |---|---|---|
  | 4 | 5 | 6 |
  | 7 | 8 | 9 |
+
+Color pattern filled as:
+
+ | O | O | O |
+ |---|---|---|
+ | G | Y | Y |
+ | G | Y | G |
