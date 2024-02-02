@@ -44,7 +44,7 @@ Yellow: 16
 
 #### how to read the output above
 
-Random pattern as answer:
+Random pattern as possible answer (or seed):
 
  | 8 | 2 | 3 |
  |:-:|:-:|:-:|
@@ -57,3 +57,14 @@ Color pattern filled as:
  |:-:|:-:|:-:|
  | Y | O | Y |
  | G | Y | O |
+
+
+### full review mode:
+```
+suko f
+```
+
+### play mode (hidden seed):
+```
+suko p
+```
