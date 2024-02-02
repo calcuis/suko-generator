@@ -1,13 +1,13 @@
 # !/usr/bin/env python3
 
-__version__="0.6"
+__version__="0.7"
 
 def __init__():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', '--version', action='version', version='%(prog)s ' + __version__)
     
-    subparsers = parser.add_subparsers(title="subcommand(s)", dest="subcommand", help="choose a subcommand:")
+    subparsers = parser.add_subparsers(title="subcommands", dest="subcommand", help="choose a subcommand:")
     subparsers.add_parser('g', help='[g] generate a suko pattern')
     subparsers.add_parser('f', help='[f] full review with seed')
     subparsers.add_parser('p', help='[p] play mode (hidden seed)')
