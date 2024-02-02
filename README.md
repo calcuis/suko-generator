@@ -59,12 +59,12 @@ Color pattern filled as:
  | G | Y | O |
 
 
-### full review mode:
+#### full review mode:
 ```
 suko f
 ```
 
-### play mode (hidden seed):
+#### play mode (hidden seed):
 ```
 suko p
 ```
