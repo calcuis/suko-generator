@@ -68,3 +68,9 @@ suko f
 ```
 suko p
 ```
+
+#### typescript version with webui
+Repo
+https://github.com/calcuis/suko
+#### try it out by:
+https://suko.calcuis.us
