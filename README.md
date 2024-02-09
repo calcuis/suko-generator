@@ -72,5 +72,5 @@ suko p
 #### typescript version with webui
 Repo:
 https://github.com/calcuis/suko
-#### try it out by:
+#### try it out via:
 https://suko.calcuis.us
